@@ -1,0 +1,51 @@
+body {
+  font-family: garamond;
+}
+
+.menu-layout {
+  text-align: center;
+  align-items: center;
+  max-width: 740px;
+  margin: auto;
+}
+
+#text-input {
+  columns: 20;
+  height: 12vh;
+  width: 99%;
+}
+.header {
+  font-style: italic;
+  background-color: #c1a051;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#menu-table {
+  background-color: #f2f2f2;
+  text-align: left;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: gainsboro;
+}
+
+.comment {
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 80% 20%;
+  grid-template-areas:
+    "rating remove"
+    "text remove";
+}
+.comment-rating {
+  grid-area: rating;
+}
+.comment-text {
+  grid-area: text;
+}
+.remove-comment {
+  grid-area: remove;
+}
